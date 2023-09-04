@@ -29,7 +29,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use(cors({
-  origin: 'https://dummypedia-mern.vercel.app'
+  origin: ['*','https://dummypedia-mern.vercel.app', 'https://dummypedia-backend-git-main-ronaldogpp.vercel.app/', 'https://dummypedia-backend-ronaldogpp.vercel.app/']
 }));
 app.use("/assets", express.static(path.join(__dirname, 'public/assets')));
 
