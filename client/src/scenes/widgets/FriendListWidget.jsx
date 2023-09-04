@@ -13,7 +13,7 @@ const FriendListWidget = ({ userId }) => {
   
     const getFriends = async () => {
         const response = await fetch (
-            `https://dummypedia-mern-backend.vercel.app/users/${userId}/friends`,
+            `https://dummypedia-backend.vercel.app/users/${userId}/friends`,
             {
                 method:"GET",
                 headers: { Authorization: `Bearer ${token}` },

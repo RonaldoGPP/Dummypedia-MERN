@@ -11,7 +11,7 @@ const UserImage = ({ image, size = "60px"}) => {
                 width={size}
                 height={size}
                 alt="user"
-                src={`https://dummypedia-mern-backend.vercel.app/assets/${image}`}
+                src={`https://dummypedia-backend.vercel.app/assets/${image}`}
             />
 
         </Box>
